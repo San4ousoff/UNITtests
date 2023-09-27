@@ -1,4 +1,4 @@
-package Seminar1.CW.task8;
+package Seminar1.HW.task2;
 
 import java.util.ArrayList;
 import java.util.Arrays;

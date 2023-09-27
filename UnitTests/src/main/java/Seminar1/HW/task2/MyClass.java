@@ -1,4 +1,5 @@
-package Seminar1.CW.task8;
+package Seminar1.HW.task2;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -46,9 +47,12 @@ public class MyClass {
                 .collect(Collectors.toList());
     }
 
+    /*
     public static void main(String[] args) {
+
         List<String> words = Arrays.asList("один", "два", "три", "четыре", "пять", "шесть");
         List<String> filteredWords1 = filterStrings(words, 5);
         System.out.println(filteredWords1);
     }
+    */
 }

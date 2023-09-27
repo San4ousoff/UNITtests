@@ -1,4 +1,4 @@
-package seminars.first.Calculator;
+package Seminar1.HW.task1;
 
 public class Calculator {
     public static int calculation(int firstOperand, int secondOperand, char operator) {
@@ -41,10 +41,21 @@ public class Calculator {
     }
 
     // Нужно написать в калькуляторе метод вычисления суммы покупки со скидкой и проверить его, используя AssertJ
-    // Примерная сигнатура и тело метода:
-    public static double calculatingDiscount(double purchaseAmount, int discountAmount) {
-        // purchaseAmount - сумма покупки
-        // discountAmount - размер скидки
-        return 0; // Метод должен возвращать сумму покупки со скидкой
+    // purchaseAmount - сумма покупки
+    // discountAmount - размер скидки
+    // Метод должен возвращать сумму покупки со скидкой
+    public static double calculateDiscount(double purchaseAmount, int discountPercentage) {
+        if (discountPercentage < 0 || discountPercentage > 100) {
+            throw new IllegalArgumentException("Размер скидки в процентах должен находиться в диапазоне от 0 до 100");
+        }
+
+        double discountAmount = purchaseAmount * (discountPercentage / 100.0);
+        double discountedPrice = purchaseAmount - discountAmount;
+        return discountedPrice;
     }
+
+//    public static void main(String[] args) {
+//        calculateDiscount(15, -5);
+//    }
+
 }
