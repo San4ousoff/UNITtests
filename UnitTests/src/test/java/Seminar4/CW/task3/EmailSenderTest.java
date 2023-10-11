@@ -6,6 +6,26 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import static org.mockito.Mockito.verify;
+//
+//public class EmailSenderTest {
+//    @Mock
+//    private EmailService mockEmailService;
+//
+//    @BeforeEach
+//    void setUp() {
+//// Инициализируем моки
+//        MockitoAnnotations.initMocks(this);
+//    }
+//
+//    void testSendWelcomeEmail() {
+//// Вызываем метод, который мы хотим протестировать
+//        emailSender.sendWelcomeEmail("user@example.com");
+//
+//// Проверяем, что метод sendEmail был вызван с ожидаемыми аргументами
+//        verify(mockEmailService).sendEmail("user@example.com", "Добро пожаловать!", "Добро пожаловать в наше приложение!");
+//    }
+//}
+//}
 
 public class EmailSenderTest {
     @Mock
